@@ -1,0 +1,31 @@
+<!-- Only updated parts shown here -->
+<div id="selector" class="hidden">
+  <h2>Choose Your Sport</h2>
+  <button onclick="showCricket()">🏏 Cricket</button>
+  <button onclick="showFootball()">⚽ Football</button>
+  <button disabled>🕒 More Coming Soon</button>
+</div>
+
+<div id="cricketPage" class="hidden">
+  <h2>Cricket</h2>
+  <button onclick="fetchLiveMatches()">🔴 Live Matches</button>
+  <button onclick="showOldSearch('cricket')">📂 Old Matches</button>
+  <div id="matches">Loading...</div>
+  <button onclick="goBack()">🔁 Back</button>
+</div>
+
+<div id="footballPage" class="hidden">
+  <h2>Football</h2>
+  <button onclick="fetchLiveFootball()">🔴 Live Matches</button>
+  <button onclick="showOldSearch('football')">📂 Old Matches</button>
+  <div id="footballMatches">Loading...</div>
+  <button onclick="goBack()">🔁 Back</button>
+</div>
+
+<div id="oldSearchPage" class="hidden">
+  <h2>Search Old Matches</h2>
+  <input id="searchInput" placeholder="Enter team or keyword" />
+  <button onclick="searchOldMatches()">Search</button>
+  <div id="oldResults">Waiting for input...</div>
+  <button onclick="goBack()">🔁 Back</button>
+</div>
