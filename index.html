@@ -1,31 +1,54 @@
-<!-- Only updated parts shown here -->
-<div id="selector" class="hidden">
-  <h2>Choose Your Sport</h2>
-  <button onclick="showCricket()">🏏 Cricket</button>
-  <button onclick="showFootball()">⚽ Football</button>
-  <button disabled>🕒 More Coming Soon</button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scory - Live Scores</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splash">
+    <h1 class="typewriter">Made by Azhaan</h1>
+    <p>Thank you for using</p>
+    <small>This Special App is only for my Special Father</small>
+  </div>
 
-<div id="cricketPage" class="hidden">
-  <h2>Cricket</h2>
-  <button onclick="fetchLiveMatches()">🔴 Live Matches</button>
-  <button onclick="showOldSearch('cricket')">📂 Old Matches</button>
-  <div id="matches">Loading...</div>
-  <button onclick="goBack()">🔁 Back</button>
-</div>
+  <div id="selector" class="hidden">
+    <h2>Choose Your Sport</h2>
+    <button onclick="showCricket()">🏏 Cricket</button>
+    <button onclick="showFootball()">⚽ Football</button>
+    <button disabled>🕒 More Coming Soon</button>
+  </div>
 
-<div id="footballPage" class="hidden">
-  <h2>Football</h2>
-  <button onclick="fetchLiveFootball()">🔴 Live Matches</button>
-  <button onclick="showOldSearch('football')">📂 Old Matches</button>
-  <div id="footballMatches">Loading...</div>
-  <button onclick="goBack()">🔁 Back</button>
-</div>
+  <div id="cricketPage" class="hidden">
+    <h2>Cricket</h2>
+    <button onclick="fetchLiveMatches()">🔴 Live Matches</button>
+    <button onclick="showOldSearch('cricket')">📂 Old Matches</button>
+    <div id="matches">Loading...</div>
+    <button onclick="goBack()">🔁 Back</button>
+  </div>
 
-<div id="oldSearchPage" class="hidden">
-  <h2>Search Old Matches</h2>
-  <input id="searchInput" placeholder="Enter team or keyword" />
-  <button onclick="searchOldMatches()">Search</button>
-  <div id="oldResults">Waiting for input...</div>
-  <button onclick="goBack()">🔁 Back</button>
-</div>
+  <div id="footballPage" class="hidden">
+    <h2>Football</h2>
+    <button onclick="fetchLiveFootball()">🔴 Live Matches</button>
+    <button onclick="showOldSearch('football')">📂 Old Matches</button>
+    <div id="footballMatches">Loading...</div>
+    <button onclick="goBack()">🔁 Back</button>
+  </div>
+
+  <div id="oldSearchPage" class="hidden">
+    <h2>Search Old Matches</h2>
+    <input id="searchInput" placeholder="Enter team or keyword" />
+    <button onclick="searchOldMatches()">Search</button>
+    <div id="oldResults">Waiting for input...</div>
+    <button onclick="goBack()">🔁 Back</button>
+  </div>
+
+  <audio id="bgMusic" loop autoplay hidden>
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+  <button id="toggleMusic" onclick="toggleMusic()">🔊 Mute</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

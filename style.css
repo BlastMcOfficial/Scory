@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background: #222;
+  color: #0af;
+  border: 2px solid #0af;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0af;
+  color: #111;
+}
+
+input {
+  padding: 0.6rem;
+  margin: 1rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: .15em solid #0af;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 2s steps(22), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #0af }
+}
+
+#toggleMusic {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #0af;
+  color: black;
+  padding: 10px 14px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  z-index: 999;
+}
